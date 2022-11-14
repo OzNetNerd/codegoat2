@@ -71,6 +71,9 @@ Resources:
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data"
       PublicAccessBlockConfiguration:
+        IgnorePublicAcls: True
+
+      PublicAccessBlockConfiguration:
         BlockPublicAcls: True
 
 

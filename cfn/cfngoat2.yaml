@@ -70,6 +70,12 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data"
+      PublicAccessBlockConfiguration:
+        IgnorePublicAcls: True
+
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+
 
 
   DataBucket2:
